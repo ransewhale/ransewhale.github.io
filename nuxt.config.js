@@ -97,9 +97,13 @@ export default {
       { code: 'ja', iso: 'ja-JP', file: 'ja.json' },
       { code: 'ko', iso: 'ko-KR', file: 'ko.json' }
     ],
-    // defaultLocale: 'ja',
+    defaultLocale: 'ja',
     vueI18n: {
       fallbackLocale: 'ja'
     }
+  },
+
+  generate: {
+    fallback: true,
   }
 }

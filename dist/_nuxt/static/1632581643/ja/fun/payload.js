@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/fun", {data:[{}],fetch:{},mutations:void 0});

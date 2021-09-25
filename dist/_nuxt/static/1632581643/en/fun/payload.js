@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/fun", {data:[{}],fetch:{},mutations:void 0});

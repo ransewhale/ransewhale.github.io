@@ -4,7 +4,7 @@ export default {
   target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - RWapp',
+    titleTemplate: '%s - ransewhale.net',
     title: 'RWapp',
     meta: [
       { charset: 'utf-8' },

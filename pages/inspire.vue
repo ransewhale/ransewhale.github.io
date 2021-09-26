@@ -18,3 +18,17 @@
     </v-col>
   </v-row>
 </template>
+
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    const items = await $content('/updates').only(['ja','en','ko','date']).limit(5).sortBy('date','desc').fetch();
+    return { items };
+  },
+  head(){
+    return {
+      title: 'Inspire'
+    }
+  }
+}
+</script>

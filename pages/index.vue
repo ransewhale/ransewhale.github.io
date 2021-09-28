@@ -42,7 +42,9 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const items = await $content('/updates').only(['ja','en','ko','date']).limit(5).sortBy('id','desc').fetch();
+    // const items = await $content('/updates').only(['ja','en','ko','date']).limit(3).sortBy('id','desc').fetch();
+    const data = await $content('/updates').fetch();
+    const items = data.updates.sort(function(a,b){return b.id-a.id;}).slice(0,3);
     return { items };
   }
 }

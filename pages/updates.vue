@@ -25,7 +25,9 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const items = await $content('/updates').only(['ja','en','ko','date']).sortBy('id','desc').fetch();
+    // const items = await $content('/updates.json').only(['ja','en','ko','date']).sortBy('id','desc').fetch();
+    const data = await $content('/updates').fetch();
+    const items = data.updates.sort(function(a,b){return b.id-a.id;});
     return { items };
   },
   head(){

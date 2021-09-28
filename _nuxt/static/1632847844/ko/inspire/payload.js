@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ko/inspire", {data:[{items:{}}],fetch:{},mutations:void 0});

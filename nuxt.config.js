@@ -13,7 +13,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'twitter:card', content: 'summary' },
       { hid: 'og:image', property: 'og:image', content: 'https://ransewhale.net/rw.png' },
-      { name: 'google-site-verification', content: 'Bh8GvN7afmYEnPtnXs96phh7Prjhii9kACFQESSVTgg' }
+      { name: 'google-site-verification', content: 'Bh8GvN7afmYEnPtnXs96phh7Prjhii9kACFQESSVTgg' },
+      {}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -53,7 +54,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxtjs/google-gtag',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -106,6 +108,12 @@ export default {
     }
   },
 
+  // Google Analytics
+  'google-gtag': {
+    id: 'G-GCWY9HGPS0',
+    debug: true
+  },
+  
   generate: {
     fallback: true,
   }

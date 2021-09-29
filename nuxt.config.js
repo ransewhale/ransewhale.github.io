@@ -12,7 +12,8 @@ export default {
       { hid: 'description', name: 'description', content: 'ransewhale.net' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'twitter:card', content: 'summary' },
-      { hid: 'og:image', property: 'og:image', content: 'https://ransewhale.net/rw.png' }
+      { hid: 'og:image', property: 'og:image', content: 'https://ransewhale.net/rw.png' },
+      { name: 'google-site-verification', content: 'Bh8GvN7afmYEnPtnXs96phh7Prjhii9kACFQESSVTgg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

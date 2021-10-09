@@ -11,6 +11,8 @@
           v-for="(item, i) in items"
           :key="i"
           :to="localePath(item.to)"
+          :href="item.href"
+          :target="item.target"
           router exact link>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
@@ -54,6 +56,8 @@
           v-for="(item, i) in items"
           :key="i"
           :to="localePath(item.to)"
+          :href="item.href"
+          :target="item.target"
           router exact>
           {{item.title}}
         </v-tab>
@@ -98,6 +102,11 @@ export default {
         {
           title: 'Contact',
           to: '/contact'
+        },
+        {
+          title: 'Blog',
+          href: 'https://blog.ransewhale.net/',
+          target: "_BLANK"
         }
       ],
       langs : [

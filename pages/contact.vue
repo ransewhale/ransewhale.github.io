@@ -36,6 +36,11 @@ export default {
           href: 'https://instagram.com/eballenov'
         },
         {
+          name: 'Email',
+          icon: 'mdi-email',
+          href: 'mailto:contact@ransewhale.net'
+        },
+        {
           name: 'Website',
           icon: 'mdi-keyboard-return',
           href: 'http://ransewhale.net/'
